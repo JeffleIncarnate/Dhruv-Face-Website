@@ -1,0 +1,64 @@
+.form_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_form {
+  width: 20%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--black);
+  transition: all 0.5s;
+  border-radius: 1rem;
+}
+
+.login_form > h1 {
+  font-size: 4rem;
+}
+
+.login_form > label {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.login_form > input {
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--black-2);
+  border: 2px solid var(--black);
+  outline: none;
+  transition: border 0.3s ease;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  color: var(--white);
+}
+
+.login_form > input:hover {
+  border: 2px solid var(--accent);
+}
+
+.login_form > input:focus {
+  border: 2px solid var(--accent);
+}
+
+.login_form > label .asterix {
+  color: red;
+}
+
+.l.link {
+  color: red;
+}
+
+.bottom_form {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
