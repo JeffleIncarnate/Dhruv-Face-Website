@@ -1,3 +1,10 @@
+.nav_img {
+  max-width: 5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
 .form_wrapper {
   width: 100%;
   height: 100vh;
@@ -27,7 +34,8 @@
   font-size: 1.2rem;
 }
 
-.login_form > input {
+.login_form > input[type="text"],
+.login_form > input[type="password"] {
   width: 90%;
   padding: 0.5rem;
   margin: 0.3rem;
@@ -41,11 +49,13 @@
   color: var(--white);
 }
 
-.login_form > input:hover {
+.login_form > input[type="text"]:hover,
+.login_form > input[type="password"]:hover {
   border: 2px solid var(--accent);
 }
 
-.login_form > input:focus {
+.login_form > input[type="text"]:focus,
+.login_form > input[type="password"]:focus {
   border: 2px solid var(--accent);
 }
 
@@ -53,8 +63,26 @@
   color: red;
 }
 
-.l.link {
-  color: red;
+.link {
+  color: var(--accent);
+}
+
+.login_form > input[type="submit"] {
+  width: 90%;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  font-size: 1.2rem;
+  border: 2px var(--accent) solid;
+  color: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.login_form > input[type="submit"]:hover {
+  background-color: var(--accent);
 }
 
 .bottom_form {
