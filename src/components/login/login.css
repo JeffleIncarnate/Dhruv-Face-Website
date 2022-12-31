@@ -90,3 +90,13 @@
   text-align: center;
   margin: 1rem;
 }
+
+.login_form > .error_login {
+  color: red;
+  display: block;
+}
+
+.login_form > .no_error_login {
+  color: red;
+  display: none;
+}
